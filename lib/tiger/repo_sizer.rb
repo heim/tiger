@@ -20,7 +20,7 @@ module Tiger
 
     def repo_size
       commit_ids.map do |commit_id|
-        [nil, repo_size_for_commit(commit_id)]
+        [commit_id, repo_size_for_commit(commit_id)]
       end
     end 
 

@@ -58,5 +58,8 @@ describe Tiger::RepoSizer do
     it "returns the correct size for the last commit" do
       subject.repo_size.last[1].should == 2355
     end
+    it "returns a hash as identifier" do
+      subject.repo_size.last[0].should_not be_nil
+    end
   end
 end
