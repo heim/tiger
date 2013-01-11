@@ -6,7 +6,6 @@ module Tiger
         BlobRegister.new(stub)
       end
     end
-
     describe "#add" do
       let (:repo) { mock(:repo, blob: blob) }
       let (:blob) { stub(:blob, :id => "foo") }
